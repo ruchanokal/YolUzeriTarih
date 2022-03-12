@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F0DE"
+    tools:context=".fragments.SettingsFragment">
+
+    <TextView
+        android:id="@+id/ayarlarBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/convergence"
+        android:text="Ayarlar"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kisiselBilgiler"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_bg3"
+        android:drawableRight="@drawable/ic_navigate_next_24"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="8dp"
+        android:text="Kişisel Bilgiler"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ayarlarBaslik" />
+
+    <TextView
+        android:id="@+id/dilSecenekleri"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_bg3"
+        android:drawableRight="@drawable/ic_navigate_next_24"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="8dp"
+        android:text="Dil Seçenekleri"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kisiselBilgiler" />
+
+
+    <TextView
+        android:id="@+id/bildirimler"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_bg3"
+        android:drawableRight="@drawable/ic_navigate_next_24"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="8dp"
+        android:text="Bildirimler"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dilSecenekleri" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

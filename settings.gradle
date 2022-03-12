@@ -1,0 +1,2 @@
+rootProject.name = "Yol Uzeri Tarih"
+include ':app'

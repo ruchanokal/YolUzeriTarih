@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F0DE"
+    tools:context=".fragments.MainFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/map"
+        android:src="@drawable/maps"/>
+
+    <TextView
+        android:id="@+id/onerilenGezilecekYerler"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_bg"
+        android:fontFamily="@font/convergence"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        android:layout_below="@id/map"
+        android:scaleType="centerCrop"
+        android:src="@drawable/maps"
+        android:text="Önerilen Gezilecek Yerler"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/onerilenGezilecekYerler"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/besiktasLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/yesilkoy"
+                    android:layout_width="115dp"
+                    android:layout_gravity="center"
+                    android:layout_height="115dp"
+                    android:src="@drawable/dolmabahce"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beşiktaş"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/textview_bg2"
+                    android:fontFamily="@font/convergence"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="5dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fatihLayout"
+            android:layout_marginHorizontal="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fatih"
+                android:layout_gravity="center"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:src="@drawable/fatih"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fatih"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/textview_bg2"
+                android:fontFamily="@font/convergence"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/arnavutkoyLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/arnavutkoy"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:src="@drawable/arnavutkoy"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arnavutköy"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:background="@drawable/textview_bg2"
+                android:fontFamily="@font/convergence"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"/>
+
+        </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/beyogluLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/beyoglu"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:src="@drawable/beyoglu"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beyoğlu"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/textview_bg2"
+                android:fontFamily="@font/convergence"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uskudarLayout"
+            android:layout_marginHorizontal="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/uskudar"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:src="@drawable/uskudar"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Üsküdar"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/textview_bg2"
+                android:fontFamily="@font/convergence"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/eminonuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/eminonu"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:src="@drawable/eminonu"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eminönü"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/textview_bg2"
+                android:fontFamily="@font/convergence"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"/>
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>
